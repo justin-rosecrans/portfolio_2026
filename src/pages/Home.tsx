@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import resume from '../assets/Justin_Rosecrans_Resume.pdf';
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Home: React.FC = () => {
             <Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>
               <Button variant="primary" className="m-2">View My Work</Button>
             </Link>
-            <a href="/resume.pdf" download>
+            <a href={resume} download>
               <Button variant="primary" className="m-2">Download Resume</Button>
             </a>
             <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
