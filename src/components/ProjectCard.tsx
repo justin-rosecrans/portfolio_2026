@@ -9,7 +9,7 @@ interface ProjectCardProps {
   sourceUrl?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, projectUrl, sourceUrl }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl }) => {
   return (
     <Card style={{ width: '100%' }} className="d-flex flex-column h-100">
       <Card.Img variant="top" src={imageUrl} style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
