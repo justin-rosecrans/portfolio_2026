@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
             <p>&copy; {new Date().getFullYear()} - Justin Rosecrans' Portfolio</p>
             <div className="mt-3">
               <p>Follow:</p>
-              <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="text-white me-3">
+              <a href="https://github.com/justin-rosecrans/portfolio_2026" target="_blank" rel="noopener noreferrer" className="text-white me-3">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="text-white">
+              <a href="https://www.linkedin.com/in/justin-rosecrans-7b956a5a/" target="_blank" rel="noopener noreferrer" className="text-white">
                 LinkedIn
               </a>
             </div>
