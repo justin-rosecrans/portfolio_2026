@@ -38,7 +38,7 @@ section {
 }
 
 /* Style for the active link on the dark navbar */
-.navbar-dark .nav-link.active {
+.main-nav .nav-link.active {
   color: var(--white) !important;
   border-bottom: 2px solid var(--primary-blue);
 }

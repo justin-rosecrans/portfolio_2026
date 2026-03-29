@@ -7,15 +7,12 @@ const About: React.FC = () => {
       <Container id="about" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
         <Row>
           <Col className="p-5 shadow-sm">
-            <h2 className="text-center mb-4">About Me</h2>
-            <p className="lead text-center">
-              I am a seasoned full-stack software engineer with over 15 years of experience in designing, developing, and deploying complex web applications.
+            <h2 className="text-center mb-4">About</h2>
+            <p>
+              Justin is a Lead Software Engineer with over 15 years of experience in building, developing and deploying to production web applications that improve usability and enhance performance.
             </p>
             <p>
-              My expertise spans across the full software development lifecycle, from gathering requirements and designing system architecture to implementation, testing, and deployment. I am passionate about building high-quality, scalable, and maintainable software solutions that solve real-world problems.
-            </p>
-            <p>
-              I have a strong background in a variety of technologies, including React, Node.js, Python, and AWS. I am always eager to learn new technologies and take on new challenges.
+              Justin has a strong background in a variety of full-stack technologies. He is passionate about learning new technologies in Artificial Intelligence (AI) and implementing the emerging technologies into his web applications.
             </p>
           </Col>
         </Row>

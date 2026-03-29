@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 
   return (
     <Container id="projects" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
-      <h2 className="text-center mb-4">My Projects</h2>
+      <h2 className="text-center mb-4">Projects</h2>
       <Row className="justify-content-center">
         {projectData.map((project, index) => (
           <Col key={index} md="auto">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
+import resume from '../assets/Justin_Rosecrans_Resume.pdf';
 
 const Footer: React.FC = () => {
   return (
@@ -8,9 +9,9 @@ const Footer: React.FC = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <p>&copy; {new Date().getFullYear()} - My Portfolio</p>
+            <p>&copy; {new Date().getFullYear()} - Justin Rosecrans' Portfolio</p>
             <div className="mt-3">
-              <p>Follow me on:</p>
+              <p>Follow:</p>
               <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="text-white me-3">
                 GitHub
               </a>
@@ -20,12 +21,21 @@ const Footer: React.FC = () => {
             </div>
           </Col>
           <Col md={6}>
-            <div className="mt-3">
-              <Link to="home" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Home</Link>
-              <Link to="about" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>About</Link>
-              <Link to="projects" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Projects</Link>
-              <Link to="contact" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Contact</Link>
-            </div>
+            <Row>
+              <Col md={6}>
+                <div className="mt-3">
+                  <Link to="home" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Home</Link>
+                  <Link to="about" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>About</Link>
+                  <Link to="projects" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Projects</Link>
+                </div>
+              </Col>
+              <Col md={6}>
+                <div className="mt-3">
+                  <a href={resume} download className="text-white d-block" style={{cursor: 'pointer'}}>Resume</a>
+                  <Link to="contact" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Contact</Link>
+                </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
