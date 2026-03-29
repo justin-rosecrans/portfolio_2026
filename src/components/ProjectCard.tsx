@@ -11,16 +11,18 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, projectUrl, sourceUrl }) => {
   return (
-    <Card style={{ width: '18rem', margin: '1rem' }}>
-      <Card.Img variant="top" src={imageUrl} />
+    <Card style={{ width: '100%' }} className="d-flex flex-column h-100">
+      <Card.Img variant="top" src={imageUrl} style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Text>
+        <Card.Text style={{ minHeight: '150px' }}>
           {description}
         </Card.Text>
+      </Card.Body>
+      <Card.Footer className="text-center">
         {projectUrl && <Button variant="primary" href={projectUrl} target="_blank" rel="noopener noreferrer" className="m-1">View Project</Button>}
         {sourceUrl && <Button variant="secondary" href={sourceUrl} target="_blank" rel="noopener noreferrer" className="m-1">Source Code</Button>}
-      </Card.Body>
+      </Card.Footer>
     </Card>
   );
 };
