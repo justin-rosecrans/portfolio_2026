@@ -1,33 +1,29 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
+import aiChatImg from '../assets/aiChat.jpg';
+import webAppImg from '../assets/webApp.jpg';
+import mfeImg from '../assets/mfe.jpg';
 
 const Projects: React.FC = () => {
   // Placeholder project data
   const projectData = [
     {
-      title: 'Monolithic MFE Project',
-      description: 'I led a major improvement to our micro‑frontend workflow by consolidating four separate MFE repositories into a single monolithic codebase. This eliminated recurring issues where developers were tagging and deploying incorrect images through the Jules CI/CD pipeline. I also integrated Turborepo to optimize build orchestration, resulting in significantly faster local development builds and improved pipeline performance across the team.',
-      imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      projectUrl: '#',
-      sourceUrl: '#'
+      title: 'AI Chat',
+      description: 'Justin is currently building an AI chat for JPMorganChase Employees by using AI CoPilot in Spec-Driven Development (SDD) that connects to a Q&A API. The AI chat will increase efficiency and enhance productivity.',
+      imageUrl: aiChatImg,
     },
     {
-      title: 'Documentation & Unit Testing Project',
-      description: 'When I joined the team, the proprietary codebase had no documentation, unclear contribution standards, unit test coverage below 69%, and failing SonarQube checks — all of which led to developer confusion and unstable releases. I created comprehensive project documentation and a clear contribution guide, raised unit test coverage to over 85%, and restored full SonarQube compliance, significantly improving code quality and team productivity.',
-      imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      projectUrl: '#',
-      sourceUrl: '#'
+      title: 'Proprietary Web Application',
+      description: 'Justin upgraded and enhanced a proprietary management web application from version 1 to version 2 to version 3 to improve usability and optimize workflow for JPMorganChase employees. Justin coordinated and executed the full migration and successful upgrades of the proprietary management web application.',
+      imageUrl: webAppImg,
     },
     {
-      title: 'Company Mandate Project',
-      description: 'I led two major releases of our proprietary web application, collaborating closely with UX designers and product owners to deliver new features for version two. I managed and guided a team of 6+ developers through tight deadlines, ensuring high‑quality delivery and smooth rollout. Following a company‑wide mandate to adopt a new CSS framework, I coordinated and executed the full migration effort, successfully upgrading the application and maintaining release stability.',
-      imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      projectUrl: '#',
-      sourceUrl: '#'
-    }
+      title: 'Monolithic Repository',
+      description: 'Justin improved a proprietary management web application by consolidating 4 Micro frontend(MFE) repositories into a single monolithic MFE repository. Merging the MFEs into a single repository increased productivity by 1,870% since the startup time decreased from 138 seconds to 7.5 seconds.',
+      imageUrl: mfeImg,
+    },
   ];
-
   return (
     <Container id="projects" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
       <h2 className="text-center mb-4">Projects</h2>
