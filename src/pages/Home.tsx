@@ -25,7 +25,7 @@ const Home: React.FC = () => {
             <Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>
               <Button variant="primary" className="m-2">Projects</Button>
             </Link>
-            <a href={resume} download>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <Button variant="primary" className="m-2">Resume</Button>
             </a>
             <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>

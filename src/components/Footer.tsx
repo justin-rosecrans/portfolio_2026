@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               </Col>
               <Col md={6}>
                 <div className="mt-3">
-                  <a href={resume} download className="text-white d-block" style={{cursor: 'pointer'}}>Resume</a>
+                  <a href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
                   <Link to="contact" smooth={true} duration={500} className="text-white d-block" style={{cursor: 'pointer'}}>Contact</Link>
                 </div>
               </Col>
