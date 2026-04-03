@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import resume from '../assets/Justin_Rosecrans_Resume_2026.pdf';
-import heroBanner from '../../dist/assets/hero_banner.jpg';
+import heroBanner from '../assets/hero_banner.jpg';
 
 const Home: React.FC = () => {
   return (
