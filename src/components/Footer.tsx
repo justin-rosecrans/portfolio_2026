@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
-import resume from '../assets/Justin_Rosecrans_Resume.pdf';
+import resume from '../assets/Justin_Rosecrans_Resume_2026.pdf';
 
 const Footer: React.FC = () => {
   return (

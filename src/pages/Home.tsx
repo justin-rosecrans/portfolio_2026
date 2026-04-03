@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import resume from '../assets/Justin_Rosecrans_Resume.pdf';
+import resume from '../assets/Justin_Rosecrans_Resume_2026.pdf';
+import heroBanner from '../../dist/assets/hero_banner.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -9,10 +10,10 @@ const Home: React.FC = () => {
       <Row className="align-items-center text-center">
         <Col>
           <h1 className="display-3">Welcome to Justin Rosecrans' Portfolio</h1>
-          <p className="lead">A showcase of 15 years of experience in software engineering, focusing on Front End technologies</p>
+          <p className="lead">Justin is a Lead Software Engineer with 15+ years of experience focusing on Front End Web Development and Artificial Intelligence (AI) implementation.</p>
           <p>
             <img 
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+              src={heroBanner} 
               alt="Technical Workspace" 
               className="img-fluid rounded shadow-lg mb-4" 
               style={{ maxWidth: '100%', height: 'auto' }}
