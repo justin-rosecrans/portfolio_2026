@@ -33,8 +33,7 @@ I focus on bridging the gap between sophisticated UI design and robust engineeri
 ---
 
 ## Get in Touch
-* **Portfolio:** [justin-rosecrans.github.io/portfolio_2026/](https://justin-rosecrans.github.io/portfolio_2026/)
-* **LinkedIn:** [Your LinkedIn Link]
-* **GitHub:** [Your GitHub Link]
+* **Portfolio:** https://justin-rosecrans.github.io/portfolio_2026/
+* **LinkedIn:** https://www.linkedin.com/in/justin-rosecrans-7b956a5a/
 
 *"Engineering with a focus on modularity, scalability, and the future of AI."*
