@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <>
       <Navigation />
-      <Main>
+      <main>
         <Element name="home">
           <Home />
         </Element>
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Element name="contact">
           <Contact />
         </Element>
-      </Main>
+      </main>
       <Footer />
     </>
   );
