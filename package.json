@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist -r https://github.com/justin-rosecrans/portfolio_2026.git"
   },
   "devDependencies": {
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "gh-pages": "^6.3.0",
     "typescript": "~5.9.3",
