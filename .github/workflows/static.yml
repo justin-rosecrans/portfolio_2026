@@ -34,9 +34,11 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
+        working-directory: ./portfolio
         run: npm install
 
       - name: Run unit tests with coverage
+        working-directory: ./portfolio
         run: |
           if find src -type f \( -name "*.test.*" -o -name "*.spec.*" \) | grep -q .; then
             echo "Unit test files found."
@@ -46,6 +48,7 @@ jobs:
           fi
 
       - name: Build app
+        working-directory: ./portfolio
         run: npm run build
 
   deploy:
@@ -62,7 +65,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: "./portfolio/dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
