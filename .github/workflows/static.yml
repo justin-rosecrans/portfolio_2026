@@ -2,9 +2,9 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the main branch
   push:
-    branches: ["Main"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,19 +26,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 20
 
       - name: Install dependencies
-        working-directory: ./portfolio
         run: npm install
 
       - name: Run unit tests with coverage
-        working-directory: ./portfolio
         run: |
           if find src -type f \( -name "*.test.*" -o -name "*.spec.*" \) | grep -q .; then
             echo "Unit test files found."
@@ -55,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
