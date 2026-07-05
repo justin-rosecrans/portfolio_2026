@@ -45,6 +45,9 @@ jobs:
             echo "No unit test files found. Skipping test execution."
           fi
 
+      - name: Build app
+        run: npm run build
+
   deploy:
     needs: test
     environment:
@@ -59,7 +62,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

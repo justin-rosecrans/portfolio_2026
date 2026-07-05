@@ -8,8 +8,8 @@ describe("ProjectCard", () => {
       <ProjectCard
         title="Portfolio Website"
         description="A sample portfolio project"
-        image="https://example.com/image.png"
-        link="https://example.com"
+        imageUrl="https://example.com/image.png"
+        projectUrl="https://example.com"
       />,
     );
 
