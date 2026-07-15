@@ -10,9 +10,11 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/justin-rosecrans/portfolio_2026.git",
-    "test": "vitest run"
+    "test": "vitest run",
+    "a11y:check": "axe --exit --tags wcag2a,wcag2aa,wcag21a,wcag21aa,wcag22a,wcag22aa http://127.0.0.1:4173/portfolio_2026/"
   },
   "devDependencies": {
+    "@axe-core/cli": "^4.10.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/react-dom": "^19.2.3",
